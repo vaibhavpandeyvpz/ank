@@ -17,4 +17,7 @@ namespace Ank;
  */
 class CaptchaImageTest extends \PHPUnit_Framework_TestCase
 {
+    public function testPlaceholder()
+    {
+    }
 }
