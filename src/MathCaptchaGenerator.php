@@ -42,7 +42,7 @@ class MathCaptchaGenerator extends CaptchaGeneratorAbstract
                 $answer = $lhs * $rhs;
                 break;
         }
-        $this->captchas[$id] = $answer;
+        $this->storage[$id] = $answer;
         $text = implode(' ', compact('lhs', 'operator', 'rhs'));
         return new CaptchaImage($text);
     }

@@ -32,7 +32,7 @@ class CaptchaGenerator extends CaptchaGeneratorAbstract
         for ($i = 0; $i < $this->length; $i++) {
             $text .= $chars[array_rand($chars)];
         }
-        $this->captchas[$id] = $text;
+        $this->storage[$id] = $text;
         return new CaptchaImage($text);
     }
 

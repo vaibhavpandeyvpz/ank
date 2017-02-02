@@ -17,10 +17,12 @@ namespace Ank;
  */
 abstract class CaptchaGeneratorAbstract implements CaptchaGeneratorInterface
 {
+    const STORAGE_KEY = __NAMESPACE__;
+
     /**
      * @var array
      */
-    protected $captchas;
+    protected $storage;
 
     /**
      * CaptchaGeneratorAbstract constructor.
@@ -31,10 +33,10 @@ abstract class CaptchaGeneratorAbstract implements CaptchaGeneratorInterface
         if (is_null($storage)) {
             $storage = &$_SESSION;
         }
-        if (empty($storage['captchas'])) {
-            $storage['captchas'] = array();
+        if (empty($storage[self::STORAGE_KEY])) {
+            $storage[self::STORAGE_KEY] = array();
         }
-        $this->captchas = &$storage['captchas'];
+        $this->storage = &$storage[self::STORAGE_KEY];
     }
 
     /**
@@ -42,9 +44,9 @@ abstract class CaptchaGeneratorAbstract implements CaptchaGeneratorInterface
      */
     public function isValid($input, $id = 'default')
     {
-        if (isset($this->captchas[$id])) {
-            $result = $input == $this->captchas[$id];
-            unset($this->captchas[$id]);
+        if (isset($this->storage[$id])) {
+            $result = $input == $this->storage[$id];
+            unset($this->storage[$id]);
             return $result;
         }
         return false;
