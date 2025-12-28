@@ -4,6 +4,7 @@
 [![Downloads](https://img.shields.io/packagist/dt/vaibhavpandeyvpz/ank.svg?style=flat-square)](https://packagist.org/packages/vaibhavpandeyvpz/ank)
 [![PHP Version](https://img.shields.io/packagist/php-v/vaibhavpandeyvpz/ank.svg?style=flat-square)](https://packagist.org/packages/vaibhavpandeyvpz/ank)
 [![License](https://img.shields.io/packagist/l/vaibhavpandeyvpz/ank.svg?style=flat-square)](LICENSE)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vaibhavpandeyvpz/ank/tests.yml?branch=main&style=flat-square)](https://github.com/vaibhavpandeyvpz/ank/actions)
 
 A simple, customizable, and modern CAPTCHA generation library for PHP 8.2+. Generate text-based or mathematics-based CAPTCHAs with full control over appearance, fonts, colors, and distortion.
 
