@@ -1,8 +1,10 @@
 {
-  "authors": [{
-    "name": "Vaibhav Pandey",
-    "email": "contact@vaibhavpandey.com"
-  }],
+  "authors": [
+    {
+      "name": "Vaibhav Pandey",
+      "email": "contact@vaibhavpandey.com"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "Ank\\": "src/"
@@ -13,16 +15,23 @@
       "Ank\\": "src/"
     }
   },
-  "description": "Simple and customizable captcha generation library, runs on PHP >= 5.3.",
-  "homepage": "http://vaibhavpandeyvpz.github.io/ank",
-  "keywords": ["ank", "random", "mathematics", "captcha", "image", "generator"],
+  "description": "Simple and customizable captcha generation library, runs on PHP >= 8.2.",
+  "homepage": "https://github.com/vaibhavpandeyvpz/ank",
+  "keywords": [
+    "ank",
+    "random",
+    "mathematics",
+    "captcha",
+    "image",
+    "generator"
+  ],
   "license": "MIT",
   "name": "vaibhavpandeyvpz/ank",
   "require": {
-    "php": "^5.3 || ^7.0"
+    "php": "^8.2"
   },
   "require-dev": {
-    "phpunit/phpunit": "^4.0 || ^5.0"
+    "phpunit/phpunit": "^10.0"
   },
   "type": "library"
 }
